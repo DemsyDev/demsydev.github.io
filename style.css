@@ -1,0 +1,76 @@
+:root{
+    --monGrisFonce: #95a5a6;
+    --monGrisClair: #bdc3c7;
+    --couleurDefontDesTitle: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.header-sidebar{
+    display: none;
+    flex-wrap: wrap;
+
+}
+
+.header-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nomPrenom, .titreCv, .contact-title, .aboutMe-title, .aboutMe-description{
+    width: 100%;
+}
+
+
+.nomPrenom, 
+.titreCv {
+    padding: 0.3em 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.nomPrenom{
+    font-size: 20px;
+    background: var(--monGrisFonce);
+}
+
+.titreCv{
+    font-size: 18px;
+    padding: 0.5em;
+    background: var(--monGrisClair);
+}
+
+.photoId{
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid var(--couleurDefontDesTitle);
+    border-radius: 50%;
+
+}
+
+.contact-title, .aboutMe-title{
+    color: white;
+    font-size: 1rem;
+    background-color: #3498db; /*Pour IE ancienne version*/
+    background-color: var(--couleurDefontDesTitle);
+    text-align: center;
+    padding: 0.3em;
+}
+
+.aboutMe-description{
+    padding: 0 7px;
+    text-align: justify;
+}
+
+@media (min-width: 500px) {
+
+    
+}

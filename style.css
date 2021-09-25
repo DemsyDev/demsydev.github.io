@@ -19,15 +19,6 @@ html, body{
 
 }
 
-.contact-info{
-    display: flex;
-    flex-wrap: wrap;
-}
-.header-content{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .nomPrenom, .titreCv, .contact-title, .aboutMe-title, .aboutMe-description{
     width: 100%;
 }
@@ -59,6 +50,31 @@ html, body{
     border-radius: 50%;
 
 }
+.contact-info ul{
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.contact-info li{
+    margin: 5px 0;
+}
+.contact-info svg{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin: 0 5px 0 0;
+}
+
+/* Les li qui contiennent les svg */
+.contact-content li{
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid #ccc;   
+    padding-bottom: 8px;
+
+}
 
 .contact-title, .aboutMe-title{
     width: 100%;
@@ -73,6 +89,19 @@ html, body{
 .aboutMe-description{
     padding: 0 7px;
     text-align: justify;
+}
+
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .localisation svg{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .localisation svg{
+        margin-right: 10px;
+    }
 }
 
 @media (min-width: 500px) {

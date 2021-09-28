@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -66,7 +67,163 @@
         </section>
     </header>
     
-    <main class="container">
+    <aside class="sidebar-competences">
+        <div class="langageInfo-title">LANGAGE INFO</div>
+        <ul class="langageInfo-content">
+            <li>
+                <span class="lbl_langageInfo">HTML / CSS</span>
+                <div class="progress border barreNiveau">
+                    <div class="progress-bar bg-white" style="width:90%"></div>
+                </div>
+            </li>
+            <li>
+                <span class="lbl_langageInfo">PHP / MYSQL</span>
+                <div class="progress border barreNiveau">
+                    <div class="progress-bar bg-white" style="width:90%"></div>
+                </div>
+            </li>
+            <li>
+                <span class="lbl_langageInfo">JAVASCRIPT</span>
+                <div class="progress border barreNiveau">
+                    <div class="progress-bar bg-white" style="width:85%"></div>
+                </div>
+            </li>
+            <li>
+                <span class="lbl_langageInfo">JAVA</span>
+                <div class="progress border barreNiveau">
+                    <div class="progress-bar bg-white" style="width:70%"></div>
+                </div>
+            </li>
+            <li>
+                <span class="lbl_langageInfo">C#</span>
+                <div class="progress border barreNiveau">
+                    <div class="progress-bar bg-white" style="width:60%"></div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="compentenceCle-title">COMPETENCES CLES</div>
+        <ul class="competencesCle-content">
+            <li>Webdesign</li>
+            <li>Spécialisation dans l’ergonomie des interfaces</li>
+            <li>Webmarketing et notoriété en ligne</li>
+            <li>Planification et gestion de projet</li>
+            <li>Principes du SEO (référencement naturel)</li>
+            <li>Installation et maintenance de OS Clients (Microsoft Windows, GNU /Linux)</li>
+            <li>Installation et Administration de machines virtuelles(VM)</li>
+        </ul>
+
+        <div class="softSkills-title">SOFT SKILLS</div>
+        <ul class="softSkill-content">
+            <li>Fiable et rigoureux</li>
+            <li>Réactif et toujours à la pointe des dernières technologies</li>
+            <li>Enthousiaste et curieux</li>
+            <li>Orienté solutions</li>
+            <li>Débrouillard et déterminé</li>
+        </ul>
+
+        <div class="langues-title">LANGUES</div>
+        <ul class="langues-content">
+            <li>Français</li>
+            <li>Anglais</li>
+        </ul>
+    </aside>
+
+    <main class="experiences">
+        <section class="teleoperateur">
+            <div class="periode">
+                Aout 2018 - juin 2019 (10 mois)
+            </div>
+            <div class="lblPoste">
+                Téléopérateur pour une PME d’achat/Vente de véhicules d’occasion
+            </div>
+            <ul class="taches">
+                <li>Recherche de véhicule en ligne (sur différentes plateformes)</li>
+                <li>Veuillez au bon fonctionnement du matériel (Ordinateurs et Téléphones)</li>
+                <li>Formation du personnel sur les techniques de recherches</li>
+                <li>Sauvegarder, migrer et cloner des postes de travail lorsque nécessaire</li>
+            </ul>
+        </section>
+
+        <section class="interimaireComptable">
+            <div class="periode">
+                Novembre 2016 – Mars 2017 (04 mois)
+            </div>
+            <div class="lblPoste">
+                Intérimaire comptable au sein de la société Worolux Sarl (Entreprise de VTC)
+            </div>
+            <ul class="taches">
+                <li>Effectuer le point des recettes journalières avec les téléopératrices</li>
+                <li>Saisie des différentes courses effectuées par les clients</li>
+                <li>Enregistrement des recettes et dépenses dans le logiciel de gestion</li>
+                <li>Suivi du planning des employés (chauffeurs et téléopératrices)</li>
+                <li>Transaction (versement) bancaire sur le compte de l’entreprise</li>
+                
+            </ul>
+        </section>
+
+        <section class="technicienSadev">
+            <div class="periode">
+                Septembre 2014 – Octobre 2016 (02 ans)
+            </div>
+            <div class="lblPoste">
+                Téléopérateur pour une PME d’achat/Vente de véhicules d’occasion
+            </div>
+            <ul class="taches">
+                <li>Installation, maintenance et mises à jour du parc informatique</li>
+                <li>Assistance des utilisateurs dans l'utilisation des outils informatiques</li>
+                <li>Superviser et vérifier l'état des ressources informatiques</li>
+                <li>Réaliser les sauvegardes et les archivages de données</li>
+                <li>Déplacement sur site pour les urgences, les installations et l’assistance</li>
+            </ul>
+        </section>
+
+        <section class="stagiaire">
+            <div class="periode">
+                Janvier 2014 – Avril 2014 (03 mois)
+            </div>
+            <div class="lblPoste">
+                Stagiaire informaticien à la mairie d’Adjamé
+            </div>
+            <ul class="taches">
+                <li>Vérification état matériels et logiciels</li>
+                <li>Devis de matériels pour les autres services</li>
+                <li>Formation des agents aux logiciels bureautiques</li>
+            </ul>
+        </section>
+    </main>
+
+    <main class="formation">
+        <section class="btsIda">
+            <div class="periode">
+                2013 - 2014
+            </div>
+            <div class="lbldiplome">
+                BTS option IDA <span class="etablissement">Groupe ESAM | Abidjan</span>
+            </div>
+            <p class="descriptDiplome">
+                Brevet de Technicien Supérieur option Informatique Développeur d’Applications - Acquisition et maîtrise des compétences informatiques techniques généralistes : programmation, développement logiciel et réseaux, langages IT, assistance technique.
+            </p>
+        </section>
+        <section class="bac">
+            <div class="periode">
+                2010 - 2011
+            </div>
+            <div class="lbldiplome">
+                Baccalauréat série C <span class="etablissement">Lycée Moderne d'Aboisso</span>
+            </div>
+
+        </section>
+    </main>
+
+    <main class="hobbies">
+        <div class="hobbies-title">HOBBIES</div>
+        <ul class="hobbies-content">
+            <li>Football</li>
+            <li>Lecture</li>
+            <li>Musique</li>
+            <li>Scrabble</li>
+        </ul>
     </main>
 </body>
 </html>

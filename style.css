@@ -13,10 +13,41 @@ html, body{
     padding: 0;
 }
 
-.header-sidebar{
-    display: none;
-    flex-wrap: wrap;
+.site{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid #ced4da; */
+}
 
+.header-topbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.identite{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cadreImage{
+    order: 2;
+    width: 100%;
+}
+
+.civilite{
+    width: 100%;
+    order: 1;
+}
+
+.contact{
+    width: 100%;
+}
+.contact svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 .nomPrenom, 
@@ -128,12 +159,6 @@ html, body{
     text-align: justify;
 }
 
-.site{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (min-width: 300px) and (max-width: 400px) {
     .localisation svg{
         margin-right: 15px;
@@ -148,8 +173,46 @@ html, body{
 
 @media (min-width: 500px) {
    
-    .header-topbar{
+    .identite{
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        background-color: #ced4da;
     }
+    
+    .cadreImage{
+        display: flex;
+        justify-content: center;
+        flex: 1 0px;
+    }
+
+    .identite img{
+        width: 235px;
+        height: 200px;
+
+    }
+    
+    .civilite{
+        width: 75%;
+        order: 2;
+        height: 100%;
+        flex: 2 0px;
+    }
+
+    .nomPrenom, .titreCv{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact{
+        flex: 1 0px;
+    }
+
+    .aboutMe{
+        flex: 2 0px;
+        border-left: 1px solid #ced4da;
+        font-size: 20px;
+    }
+
 }

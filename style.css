@@ -19,7 +19,12 @@ html, body{
 
 }
 
-.nomPrenom, .titreCv, .contact-title, .aboutMe-title, .aboutMe-description{
+.nomPrenom, 
+.titreCv, 
+.contact-title, 
+.aboutMe-title, 
+.aboutMe-description
+.langageInfo-title{
     width: 100%;
 }
 
@@ -50,9 +55,10 @@ html, body{
     border-radius: 50%;
 
 }
-.contact-info ul{
+.contact-info ul,
+.langageInfo-content{
     list-style-type: none;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .contact-info li{
@@ -76,18 +82,49 @@ html, body{
 
 }
 
-.contact-title, .aboutMe-title{
+.contact-title, 
+.aboutMe-title, 
+.langageInfo-title,
+.compentenceCle-title,
+.softSkills-title,
+.langues-title,
+.experience-title,
+.formation-title,
+.hobbies-title{
     width: 100%;
     color: white;
     font-size: 1rem;
+    font-weight: 900;
     background-color: #3498db; /*Pour IE ancienne version*/
     background-color: var(--couleurDefontDesTitle);
     text-align: center;
     padding: 0.3em;
+    margin-bottom: 15px;
 }
+
+.hobbies-title{
+    margin-top: 10px;
+}
+
+
 
 .aboutMe-description{
     padding: 0 7px;
+    text-align: justify;
+}
+.periode{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lblPoste, .lbldiplome{
+    font-weight: bold;
+    text-align: center;
+}
+
+.descriptDiplome{
+    padding: 0 10px;
     text-align: justify;
 }
 

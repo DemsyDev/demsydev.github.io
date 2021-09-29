@@ -357,4 +357,10 @@ html, body{
     .formation-title{
         margin-bottom: 30px;
     }
+
+    /* .periode{
+        background-color: #95a5a6;
+        background-color: var(--monGrisFonce);
+        color: white;
+    } */
 }

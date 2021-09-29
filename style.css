@@ -1,7 +1,9 @@
 :root{
     --monGrisFonce: #95a5a6;
     --monGrisClair: #bdc3c7;
-    --couleurDefontDesTitle: #3498db;
+    /* --couleurDefontDesTitle: #3498db; */
+    --couleurDefontDesTitle:rgb(13, 110, 253);
+    /* --bs-white-rgb: 255, 255, 255; */
 }
 
 * {
@@ -14,7 +16,9 @@ html, body{
 }
 
 .site{
+    display: flex;
     max-width: 1200px;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid #ced4da; */
@@ -23,6 +27,7 @@ html, body{
 .header-topbar{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .identite{
@@ -41,9 +46,10 @@ html, body{
     order: 1;
 }
 
-.contact{
+.contact, .langageInfo-content, .langues-content{
     width: 100%;
 }
+
 .contact svg{
     width: 16px;
     height: 16px;
@@ -86,14 +92,16 @@ html, body{
     border-radius: 50%;
 
 }
-.contact-info ul,
-.langageInfo-content{
-    list-style-type: none;
-    padding: 10px 20px;
+
+.sidebar-competences{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.contact-info li{
-    margin: 5px 0;
+.contact-info li,
+.sidebar-competences li{
+    /* margin: 5px 0; */
+    padding: 5px 10px;
 }
 .contact-info svg{
     content: "";
@@ -124,7 +132,7 @@ html, body{
 .hobbies-title{
     width: 100%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 900;
     background-color: #3498db; /*Pour IE ancienne version*/
     background-color: var(--couleurDefontDesTitle);
@@ -133,31 +141,85 @@ html, body{
     margin-bottom: 15px;
 }
 
-.hobbies-title{
-    margin-top: 10px;
+.aboutMe-description,
+.langageInfo-content,
+.competencesCle-content,
+.softSkill-content,
+.langues-content,
+.experiences,
+.formation,
+.hobbies{
+    font-size: 20px;
 }
 
+.hobbies-title{
+    margin-top: 15px;
+}
 
+.hobbies ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .hobbies-content li::marker{
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+} */
 
 .aboutMe-description{
     padding: 0 7px;
     text-align: justify;
 }
 .periode{
-    font-size: 20px;
+    background-color: var(--monGrisFonce);
+    /* color: #fff; */
     text-align: center;
     font-weight: bold;
 }
 
 .lblPoste, .lbldiplome{
+    color: var(--couleurDefontDesTitle);
     font-weight: bold;
     text-align: center;
+    padding-top: 15px;
 }
 
 .descriptDiplome{
     padding: 0 10px;
     text-align: justify;
 }
+
+/*PROGRESS BAR*/
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    transition: width 0.6s ease;
+  }
+
+  /* .bg-white {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  } */
 
 @media (min-width: 300px) and (max-width: 400px) {
     .localisation svg{
@@ -171,12 +233,16 @@ html, body{
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
    
     .identite{
         display: flex;
         align-items: center;
         background-color: #ced4da;
+    }
+
+    .header-topbar{
+        background-color: aliceblue;
     }
     
     .cadreImage{
@@ -205,6 +271,10 @@ html, body{
         justify-content: center;
     }
 
+    .titreCv{
+        letter-spacing: 5px;
+    }
+
     .contact{
         flex: 1 0px;
     }
@@ -215,4 +285,76 @@ html, body{
         font-size: 20px;
     }
 
+    .sidebar-competences{
+        flex: 1 0px;
+        color: white;
+        font-size: 20px;
+        /* background-color: #bdc3c7; */
+        background-color: #95a5a6;
+        background-color: var(--monGrisFonce);
+    }
+
+    .sidebar-droit{
+        flex: 2 0px;
+        background-color: aliceblue;
+        border-left: 1px solid #ced4da;
+    }
+
+    .langageInfo-content{
+        width: 100%;
+    }
+
+    .sidebar-competences li{
+        /* margin: 20px 0; */
+        padding-top: 30px;
+    }
+
+    .sidebar-competences ul li:first-child{
+        padding-top: 0;
+    }
+
+    .sidebar-competences li::marker{
+        color: black;
+    }
+
+    .sidebar-droit{
+        font-size: 20px;
+    }
+
+    .experiences .periode,
+    .formation .periode{
+        flex: 1 0px;
+        background-color: var(--monGrisClair);
+        margin: 0 10px;
+        
+    }
+
+    .experiences .lblexperience,
+    .formation .lblformation{
+        flex: 3 0px;
+        border-left: 1px solid blue;
+    }
+
+    .experiences .sectionExperience, .formation .sectionExperience{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .lblPoste, .lbldiplome{
+        color: blue;
+        color: var(--couleurDefontDesTitle);
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 0;/*Defait l'autre(Mobile) */
+    }
+
+    .hobbies, .formation{
+        margin-top: 30px;
+    }
+
+    .formation-title{
+        margin-bottom: 30px;
+    }
 }

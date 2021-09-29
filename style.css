@@ -60,8 +60,9 @@ html, body{
 .titreCv, 
 .contact-title, 
 .aboutMe-title, 
-.aboutMe-description
-.langageInfo-title{
+.aboutMe-description,
+.langageInfo-title,
+.references-title{
     width: 100%;
 }
 
@@ -129,7 +130,8 @@ html, body{
 .langues-title,
 .experience-title,
 .formation-title,
-.hobbies-title{
+.hobbies-title,
+.references-title{
     width: 100%;
     color: white;
     font-size: 1.3rem;
@@ -141,6 +143,10 @@ html, body{
     margin-bottom: 15px;
 }
 
+.references-title{
+    border-style: double;
+}
+
 .aboutMe-description,
 .langageInfo-content,
 .competencesCle-content,
@@ -148,7 +154,8 @@ html, body{
 .langues-content,
 .experiences,
 .formation,
-.hobbies{
+.hobbies,
+.references{
     font-size: 20px;
 }
 
@@ -370,9 +377,11 @@ html, body{
         justify-content: space-around;
     }
 
-    /* .periode{
-        background-color: #95a5a6;
-        background-color: var(--monGrisFonce);
-        color: white;
-    } */
+    .references a{
+        text-decoration: none;
+    }
+
+    .references a:hover{
+        text-decoration: underline;
+    }
 }
